@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.App{
+  max-width: 340px;
+  max-height: 600px;
+  background: #242126;
+  width: 340px;
+  height: 600px;
+  align-items: center;
+  justify-items: center;
+}

@@ -1,4 +1,6 @@
 import SelectableOptionRectangle from "./SelectableOptionRectangle"
+import CalendarButton from "./CalendarButton"
+
 
 export default function DateSelector () {
     return (
@@ -15,6 +17,7 @@ export default function DateSelector () {
             <SelectableOptionRectangle>
                 <div>Random day</div>
             </SelectableOptionRectangle>
+            <CalendarButton />
         </div>
 
     )

@@ -98,7 +98,21 @@
   height: 100%;
 }
 
+.DateSelector{
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  align-items: center;
+  align-content: center;
+
+}
+
 .SelectableOptionRectangle {
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +121,16 @@
   font-family: Karla;
   font-size: 12px;
   font-weight: 400;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.15);
 }
 
+.SelectableOptionRectangle div {
+  color: #FFF;
+  font-family: Karla;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 

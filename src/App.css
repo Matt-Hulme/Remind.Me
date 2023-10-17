@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+#root {
+  width: fit-content;
+}
+
 
 .App{
   max-width: 340px;
@@ -12,7 +16,6 @@
   height: 600px;
   align-items: center;
   justify-items: center;
-
 }
 
 .AppContainer {
@@ -25,22 +28,85 @@
   flex-direction: column;
   align-items:center;
   justify-content: center;
-  font-family: 'Karla', sans-serif;
+  font-family: Karla;
+  font-style: normal;
   color: #FFFF;
 }
 
-#Mainh1{
+.CloseButton {
+  position: relative;
+  top: -59px;
+  right: -147px;
+  width: 20px; 
+  height: 20px;
+}
+
+.CloseButton::before,
+.CloseButton::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px; 
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.CloseButton::before {
+  transform: rotate(45deg);
+}
+
+.CloseButton::after {
+  transform: rotate(-45deg);
+}
+
+.AppContainerMain {
+  width: 240px;
+  height: 439px;
+}
+
+.Mainh1{
   font-size: 25px;
   font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.MainSubtitle{
+  font-size: 14px;
+  font-weight: 400;
+  align-self: flex-start;
+  margin-bottom: 10px;
+  opacity: 70%;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 500;
+
 }
 
 .UrlFieldForm{
   border-radius: 2px;
   width: 240px;
   height: 24px;
+  display:flex;
+  margin-bottom: 20px;
 }
 
 .UrlTextBox{
   width: 100%;
   height: 100%;
 }
+
+.SelectableOptionRectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  color: #FFF;
+  font-family: Karla;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+

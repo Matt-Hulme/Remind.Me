@@ -1,4 +1,4 @@
-import CalendarIcon from '../../src/assets/CalendarIcon.png'
+import CalendarIcon from '../../assets/CalendarIcon.svg'
 
 export default function CalendarButton () {
     return (

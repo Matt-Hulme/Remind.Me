@@ -1,0 +1,11 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 51">
+<path id="Rectangle 83" d="M1.5 3C1.5 2.72386 1.72386 2.5 2 2.5H14C14.2761 2.5 14.5 2.72386 14.5 3V14C14.5 14.2761 14.2761 14.5 14 14.5H2C1.72386 14.5 1.5 14.2761 1.5 14V3Z" stroke="white"/>
+<rect id="Rectangle 84" x="4" y="1" width="1" height="2" rx="0.5" fill="white"/>
+<rect id="Rectangle 85" x="11" y="1" width="1" height="2" rx="0.5" fill="white"/>
+<rect id="Rectangle 87" x="4" y="7" width="8" height="1" rx="0.5" fill="white"/>
+<rect id="Rectangle 91" x="4" y="9" width="8" height="1" rx="0.5" fill="white"/>
+<rect id="Rectangle 88" x="4" y="11" width="5" height="1" rx="0.5" fill="white"/>
+<rect id="Rectangle 92" opacity="0.4" x="2" y="3" width="12" height="2" fill="white"/>
+</g>
+</svg>

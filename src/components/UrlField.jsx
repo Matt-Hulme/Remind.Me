@@ -1,13 +1,13 @@
-import Checkbox from './Checkbox.jsx'
+import Checkbox from './Buttons/Checkbox.jsx'
 
 export default function UrlField() {
     return (
         <div className="UrlField">
-            <Checkbox />
             <form className="UrlFieldForm">
+            <Checkbox />
                 <label htmlFor="UrlTextBox">
                 </label>         
-                <input className="UrlTextBox" type="text" name="UrlTextBox">
+                <input className="UrlTextBox" type="text" id="UrlTextBox">
                 </input>
             </form>
         </div>

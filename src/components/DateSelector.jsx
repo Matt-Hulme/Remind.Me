@@ -1,5 +1,5 @@
 import SelectableOptionRectangle from "./SelectableOptionRectangle"
-import CalendarButton from "./CalendarButton"
+import CalendarButton from "./Buttons/CalendarButton"
 
 
 export default function DateSelector () {

@@ -1,4 +1,4 @@
-import DescriptionField from './DescriptionField.jsx'
+import DescriptionField from './Fields/DescriptionField.jsx'
 
 
 export default function Description () {

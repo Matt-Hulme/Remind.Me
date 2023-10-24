@@ -4,7 +4,6 @@ export default function SaveButton () {
       <button className="SaveButton">
         <div>
           Save
-
         </div>
       </button>
     </div>

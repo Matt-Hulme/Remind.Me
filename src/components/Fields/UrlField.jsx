@@ -1,4 +1,4 @@
-import Checkbox from './Buttons/Checkbox.jsx'
+import Checkbox from '../Buttons/Checkbox.jsx'
 
 export default function UrlField() {
     return (

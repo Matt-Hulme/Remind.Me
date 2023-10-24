@@ -8,8 +8,30 @@
   width: fit-content;
 }
 
+.EmailCapturePage{
+  height: 325px;
+  width: 340px;
+  background-color: #242126;
+  border-radius: 20px;
+  padding: 50px;
+}
 
-.App{
+.EmailCapturePageContainer {
+  height: 100%;
+  width: 100%;
+  font-family: Karla;
+  font-style: normal;
+  color: #FFFF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* .EmailCapturePageMainContainer {
+} */
+
+.MainPage{
   max-width: 340px;
   max-height: 600px;
   width: 340px;
@@ -18,7 +40,12 @@
   justify-items: center;
 }
 
-.AppContainer {
+.MainPageContainer{
+  height: 100%;
+  width: 100%;
+}
+
+.MainPageMainContainer {
   background-color: #242126;
   height: 100%;
   width: 100%;
@@ -26,16 +53,12 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
-  align-items:center;
   justify-content: center;
   font-family: Karla;
   font-style: normal;
   color: #FFFF;
 }
 
-.AppContainerMain{
-  height: 300px;
-}
 
 .CloseButton {
   position: relative;
@@ -73,8 +96,12 @@
   font-size: 25px;
   font-weight: 400;
   margin-bottom: 20px;
-  font-size: 25px;
+}
+
+.Mainh2{
+  font-size: 15px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .MainSubtitle{
@@ -86,7 +113,10 @@
   color: #FFF;
   font-size: 12px;
   font-weight: 500;
+}
 
+#EmailCapturePageH2{
+  margin-bottom: 5px;
 }
 
 .UrlFieldForm{
@@ -104,6 +134,29 @@
   background: rgba(255, 255, 255, 0.10);
   border-radius: 2px;
   border: none;
+}
+
+.EmailCaptureField{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+
+.EmailCaptureFieldForm{
+  border-radius: 2px;
+  width: 240px;
+  height: 24px;
+  display:flex;
+  margin-bottom: 20px;
+}
+
+.EmailCaptureTextBox{
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 2px;
+  border: none;
+  padding: 5px;
 }
 
 .DateAndTimeSelectorWrapper {
@@ -279,10 +332,48 @@
   line-height: normal;
   opacity: 0.6;
   border: none;
-
 }
 
 .SaveButton div{
+  color: #FFF;
+  font-family: Karla;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* opacity: 0.6; */
+}
+
+.NextButtonContainer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70px;
+}
+
+.NextButton{
+  width: 100%;
+  height: 28px;
+  border-radius: 14px;
+  background: #6F6A72;
+  display: flex;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  color: #FFF;
+  font-family: Karla;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.6;
+  border: none;
+}
+
+.NextButton div{
   color: #FFF;
   font-family: Karla;
   font-size: 15px;

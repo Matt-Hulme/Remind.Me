@@ -23,13 +23,16 @@
   font-style: normal;
   color: #FFFF;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   row-gap: 20px;
 }
 
-/* .EmailCapturePageMainContainer {
-} */
+.EmailCapturePageMainContainer {
+  height: 157px;
+  width: 240px;
+}
 
 .MainPage{
   max-width: 340px;
@@ -353,7 +356,7 @@
 }
 
 .NextButton{
-  width: 100%;
+  width: 240px;
   height: 28px;
   border-radius: 14px;
   background: #6F6A72;

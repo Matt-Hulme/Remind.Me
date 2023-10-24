@@ -1,5 +1,5 @@
 import EmailCaptureField from '../Fields/EmailCaptureField'
-import NextButton from '../Buttons/NextButton.jsx'
+import NextButton from '../Buttons/NextButton'
 
 export default function EmailCapturePage (){
   return (

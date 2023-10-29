@@ -1,1 +1,19 @@
 I  might have to change "SelectableOptionRectangle" as I build the onClick functionality 
+
+
+TODO
+  *Clean-up Close Button (use CloseButton2 now)
+
+  *Database
+
+  *Backend
+
+  *Login
+
+  *Authentication
+
+  *CSS Sections/grouping
+    [Buttons section?, ]
+
+  *PremiumVersion
+  

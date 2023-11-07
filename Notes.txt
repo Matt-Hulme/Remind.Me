@@ -2,7 +2,7 @@ I  might have to change "SelectableOptionRectangle" as I build the onClick funct
 
 
 TODO
-  *Clean-up Close Button (use CloseButton2 now)
+  *Clean-up Close Button (use CloseButton2 now) (wtf is going on here Matt)
 
   *Database
 

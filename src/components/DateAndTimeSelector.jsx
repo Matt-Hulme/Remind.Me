@@ -1,14 +1,15 @@
-import DateSelector from "./DateSelector"
-import TimeSelector from './TimeSelector'
-import Description from './Description'
+import React from 'react';
+import DateSelector from "./DateSelector";
+import TimeSelector from './TimeSelector';
+import Description from './Description';
 
-export default function DateAndTimeSelector () {
-    return (
-        <div className="DateAndTimeSelector">
-            <h2 className="MainSubtitle">Remind Me...</h2>
-            <DateSelector />
-            <TimeSelector />
-            <Description />
-        </div>
-    )
+export default function DateAndTimeSelector({ onDateTimeChange }) {
+  return (
+    <div className="DateAndTimeSelector">
+      <h2 className="MainSubtitle">Remind Me...</h2>
+      <DateSelector onDateChange={onDateTimeChange} />
+      <TimeSelector onTimeChange={onDateTimeChange} />
+      <Description />
+    </div>
+  );
 }

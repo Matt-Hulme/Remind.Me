@@ -2,6 +2,8 @@ I  might have to change "SelectableOptionRectangle" as I build the onClick funct
 
 
 TODO
+  Clean up Email Address Submit button (Put the submit functionality within the "Next" Button)
+
   *Clean-up Close Button (use CloseButton2 now) (wtf is going on here Matt)
 
   *Database

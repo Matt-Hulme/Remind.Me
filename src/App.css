@@ -247,7 +247,7 @@
   opacity: 0.8;
 }
 
-.SelectableOptionRectangle {
+.SelectableOptionButton {
   width: auto;
   height: auto;
   display: flex;
@@ -255,17 +255,31 @@
   align-items: center;
   padding: 5px 10px;
   font-family: Karla;
-  font-size: 12px;
-  font-weight: 400;
-  border-radius: 2px;
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.SelectableOptionRectangle div {
+  color: #FFF;
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  cursor: pointer;
 }
+
+.SelectableOptionButton.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFF;
+  border: 2px solid white;
+}
+
+.SelectableOptionButton.active:hover {
+  opacity: 1;
+}
+
+.SelectableOptionButton:hover {
+  opacity: 0.5;
+}
+
+
 
 .CalendarButton{
   width: 24px;
@@ -384,17 +398,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border: none; 
+  border: none;
+  cursor: pointer; 
 }
 
-.SaveButton div{
-  color: #FFF;
-  font-family: Karla;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+.SaveButton:hover {
+  opacity: 0.5;
 }
+
+
 
 .NextButtonContainer{
   display:flex;
@@ -472,6 +484,7 @@
   font-weight: 700;
   line-height: normal;
 }
+
 
 
 

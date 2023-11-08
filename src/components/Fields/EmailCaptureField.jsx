@@ -3,12 +3,12 @@ import { useState } from 'react';
 export default function EmailCaptureField() {
   const [email, setEmail] = useState('');
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
     // Make a POST request to the server with the email data
     try {

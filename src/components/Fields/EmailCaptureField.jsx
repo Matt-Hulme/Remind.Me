@@ -10,7 +10,6 @@ export default function EmailCaptureField() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Make a POST request to the server with the email data
     try {
       const response = await fetch('http://localhost:3000/create-reminder', {
         method: 'POST',

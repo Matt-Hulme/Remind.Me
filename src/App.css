@@ -265,7 +265,7 @@
   cursor: pointer;
 }
 
-.SelectableOptionButton.active {
+.NotiDateActive {
   background: rgba(255, 255, 255, 0.15);
   color: #FFF;
   border: 2px solid white;
@@ -398,7 +398,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border: none;
+  border: none; 
   cursor: pointer; 
 }
 

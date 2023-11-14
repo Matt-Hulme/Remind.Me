@@ -1,18 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export default function SelectableOptionRectangle({ children, onClick }) {
-  const [isActive, setActive] = useState(false);
-
+export default function SelectableOptionRectangle({ children, onClick, className }) {
   const handleOptionClick = () => {
-    setActive(!isActive);
     onClick(); 
   };
 
   return (
     <button
       type="button"
-      className={`SelectableOptionButton ${isActive ? 'active' : ''}`}
       onClick={handleOptionClick}
+      className={`SelectableOptionButton ${className}`}
     >
       {children}
     </button>

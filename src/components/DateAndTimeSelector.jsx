@@ -3,12 +3,12 @@ import DateSelector from "./DateSelector";
 import TimeSelector from './TimeSelector';
 import Description from './Description';
 
-export default function DateAndTimeSelector({ onDateTimeChange }) {
+export default function DateAndTimeSelector({ onDateChange, onTimeChange }) {
   return (
     <div className="DateAndTimeSelector">
       <h2 className="MainSubtitle">Remind Me...</h2>
-      <DateSelector onDateChange={onDateTimeChange} />
-      <TimeSelector onTimeChange={onDateTimeChange} />
+      <DateSelector onDateChange={onDateChange} />
+      <TimeSelector onTimeChange={onTimeChange} />
       <Description />
     </div>
   );

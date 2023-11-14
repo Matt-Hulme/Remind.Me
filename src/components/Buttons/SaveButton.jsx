@@ -1,16 +1,17 @@
 import React from 'react';
 
-export default function SaveButton({ url, dateTime, notificationType }) {
+export default function SaveButton({ url, notiDate, notiTime, notificationType }) {
   const handleSave = () => {
     // Create a data object with the data to send
     const data = {
       url,
-      dateTime,
+      notiDate,
+      notiTime,
       notificationType,
     };
 
     // Send a POST request to your backend server
-    fetch('/create-reminder', {
+    fetch('http://localhost:3000/create-reminder', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

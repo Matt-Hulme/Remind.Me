@@ -268,7 +268,7 @@
 .NotiDateActive {
   background: rgba(255, 255, 255, 0.15);
   color: #FFF;
-  border: 2px solid white;
+  outline: 1px solid white;
 }
 
 .SelectableOptionButton.active:hover {

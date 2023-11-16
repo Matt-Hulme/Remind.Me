@@ -3,8 +3,18 @@ import ClockButton from './Buttons/ClockButton';
 import SelectableOptionRectangle from './SelectableOptionRectangle';
 
 export default function TimeSelector({ onTimeChange }) {
-  const handleTimeChange = (selectedTime) => {
-    onTimeChange(selectedTime);
+  const [activeTime, setActiveTime] = useState ('');
+
+  const handleTimeSelection = (selectedTime) => {
+    if (activeTime === selectedTime) {
+      setActiveTime(''); // Deselect if the same time is clicked
+      onTimeChange(''); // Notify the parent component about the deselection
+      console.log('Time Selection Cleared')
+    } else {
+      setActiveTime(selectedTime); // Set the selected time in state
+      onTimeChange(selectedTime); // Notify the parent component about the selected time
+      console.log(selectedTime)
+    }
   };
 
   return (
@@ -12,12 +22,19 @@ export default function TimeSelector({ onTimeChange }) {
       <div>
         At
       </div>
-      <SelectableOptionRectangle onClick={() => handleTimeChange('8AM')}>
+      <SelectableOptionRectangle 
+        onClick={() => handleTimeSelection('8AM')}
+        className={activeTime === '8AM' ? 'NotiTimeActive' : ''}
+      >
+        
         <div>
           8AM
         </div>
       </SelectableOptionRectangle>
-      <SelectableOptionRectangle onClick={() => handleTimeChange('5PM')}>
+      <SelectableOptionRectangle 
+        onClick={() => handleTimeSelection('5PM')}
+        className={activeTime === '5PM' ? 'NotiTimeActive' : ''}
+      >
         <div>
           5PM
         </div>

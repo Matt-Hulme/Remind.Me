@@ -271,6 +271,18 @@
   outline: 1px solid white;
 }
 
+.NotiTimeActive {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFF;
+  outline: 1px solid white;
+}
+
+.NotiTypeActive {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFF;
+  outline: 1px solid white;
+}
+
 .SelectableOptionButton.active:hover {
   opacity: 1;
 }

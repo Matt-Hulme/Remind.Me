@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import ClockButton from './Buttons/ClockButton';
 import SelectableOptionRectangle from './SelectableOptionRectangle';
 
@@ -9,11 +9,9 @@ export default function TimeSelector({ onTimeChange }) {
     if (activeTime === selectedTime) {
       setActiveTime(''); // Deselect if the same time is clicked
       onTimeChange(''); // Notify the parent component about the deselection
-      console.log('Time Selection Cleared')
     } else {
       setActiveTime(selectedTime); // Set the selected time in state
       onTimeChange(selectedTime); // Notify the parent component about the selected time
-      console.log(selectedTime)
     }
   };
 

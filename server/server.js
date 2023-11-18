@@ -1,24 +1,47 @@
 const express = require('express');
 const cors = require('cors');
+const mysql = require('mysql2'); // Add this line
 const app = express();
-const port = 3000; // Change to your desired port
+const port = 3000;
 
-app.use(cors());
-app.use(express.json()); // Enable JSON request body parsing
-
-// Define a route to handle POST requests for email capture
-app.post('/create-reminder', (req, res) => {
-  const { email, dateTime, message, numMessages } = req.body; // Assuming the request contains an "email" field in the JSON body
-  console.log('Received POST request:', req.body);
-
-
-  // Process the email data as needed (e.g., save it to the database, send a confirmation email, etc.)
-  
-  // Respond with a success or error message
-  res.json({ message: 'Remind.me Notification Saved' });
+// Create a MySQL database connection
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'your_mysql_username',
+  password: 'your_mysql_password',
+  database: 'your_database_name',
 });
 
-// Start the server
+connection.connect((err) => {
+  if (err) {
+    console.error('Error connecting to MySQL:', err);
+  } else {
+    console.log('Connected to MySQL database');
+  }
+});
+
+app.use(cors());
+app.use(express.json());
+
+app.post('/create-reminder', (req, res) => {
+  const { email, dateTime, message, numMessages } = req.body;
+
+  // Define your MySQL query to insert data
+  const sql = 'INSERT INTO reminders (email, dateTime, message, numMessages) VALUES (?, ?, ?, ?)';
+  const values = [email, dateTime, message, numMessages];
+
+  // Execute the query
+  connection.query(sql, values, (err, result) => {
+    if (err) {
+      console.error('Error inserting reminder into MySQL:', err);
+      res.status(500).json({ message: 'Internal Server Error' });
+    } else {
+      console.log('Reminder saved to MySQL database:', req.body);
+      res.json({ message: 'Remind.me Notification Saved' });
+    }
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

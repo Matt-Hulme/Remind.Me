@@ -2,6 +2,8 @@ I  might have to change "SelectableOptionRectangle" as I build the onClick funct
 
 
 TODO
+  Re-do all spacing/layout
+
   Clean up Selected Button CSS (selectableoptionrectangle) because it's adding vertical space on the border when it's active
 
   (First Page) Clean up Email Address Submit button (Put the submit functionality within the "Next" Button)

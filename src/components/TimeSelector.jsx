@@ -30,6 +30,16 @@ export default function TimeSelector({ onTimeChange }) {
         </div>
       </SelectableOptionRectangle>
       <SelectableOptionRectangle 
+        onClick={() => handleTimeSelection('12PM')}
+        className={activeTime === '12PM' ? 'NotiTimeActive' : ''}
+      >
+        
+        <div>
+          12PM
+        </div>
+      </SelectableOptionRectangle>
+      
+      <SelectableOptionRectangle 
         onClick={() => handleTimeSelection('5PM')}
         className={activeTime === '5PM' ? 'NotiTimeActive' : ''}
       >

@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function SaveButton({ url, notiDate, notiTime, notificationType }) {
+export default function SaveButton({ url, notiDate, notiTime, notiType }) {
   const handleSave = () => {
     // Create a data object with the data to send
     const data = {
       url,
       notiDate,
       notiTime,
-      notificationType,
+      notiType,
     };
 
     // Send a POST request to your backend server

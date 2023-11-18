@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import CloseButton from '../Buttons/CloseButton.jsx';
 import UrlField from '../Fields/UrlField.jsx';
 import DateAndTimeSelector from '../DateAndTimeSelector.jsx';
-import NotificationTypeSelector from '../NotificationTypeSelector.jsx';
+import NotiTypeSelector from '../NotiTypeSelector.jsx';
 import SaveButton from '../Buttons/SaveButton.jsx';
 
 export default function MainPage() {
   const [url, setUrl] = useState('');
   const [notiDate, setNotiDate] = useState('');
   const [notiTime, setNotiTime] = useState('');
-  const [notificationType, setNotificationType] = useState('');
+  const [notiType, setNotiType] = useState('');
 
   const handleUrlChange = (event) => {
     setUrl(event.target.value);
@@ -23,8 +23,8 @@ export default function MainPage() {
     setNotiTime(newTime);
   };
 
-  const handleNotificationTypeChange = (selectedType) => {
-    setNotificationType(selectedType);
+  const handleNotiTypeChange = (selectedType) => {
+    setNotiType(selectedType);
   };
 
   return (
@@ -36,12 +36,12 @@ export default function MainPage() {
           <h2 className="MainSubtitle">URL</h2>
           <UrlField onUrlChange={handleUrlChange} />
           <DateAndTimeSelector onDateChange={handleDateChange} onTimeChange={handleTimeChange} />
-          <NotificationTypeSelector onNotificationTypeChange={handleNotificationTypeChange} />
+          <NotiTypeSelector onNotiTypeChange={handleNotiTypeChange} />
           <SaveButton
             url={url}
             notiDate={notiDate}
             notiTime={notiTime}
-            notificationType={notificationType}
+            notifiType={notiType}
           />
         </div>
       </div>

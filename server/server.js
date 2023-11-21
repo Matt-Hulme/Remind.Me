@@ -4,12 +4,15 @@ const mysql = require('mysql2'); // Add this line
 const app = express();
 const port = 3000;
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 // Create a MySQL database connection
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'your_mysql_username',
-  password: 'your_mysql_password',
-  database: 'your_database_name',
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD, 
+  database: process.env.DB_DATABASE 
 });
 
 connection.connect((err) => {

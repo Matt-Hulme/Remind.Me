@@ -27,10 +27,10 @@ app.use(cors());
 app.use(express.json());
 
 app.post('/create-reminder', (req, res) => {
-  const { email, dateTime, message, numMessages } = req.body;
+  const { email, dateTime, message, messageCount } = req.body;
 
   // Define your MySQL query to insert data
-  const sql = 'INSERT INTO reminders (email, dateTime, message, numMessages) VALUES (?, ?, ?, ?)';
+  const sql = 'INSERT INTO reminders (email, dateTime, message, messageCount) VALUES (?, ?, ?, ?)';
   const values = [email, dateTime, message, numMessages];
 
   // Execute the query

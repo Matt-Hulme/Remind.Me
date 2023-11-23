@@ -29,11 +29,9 @@ export default function MainPage() {
 
   return (
     <div className='MainPage'>
-      <div className='MainPageContainer'>
-        <CloseButton />
+      <div className='MainPageWrapper'>
         <div className='MainPageMainContainer'>
           <h1 className="Mainh1">Remind me about this URL</h1>
-          <h2 className="MainSubtitle">URL</h2>
           <UrlField onUrlChange={handleUrlChange} />
           <DateAndTimeSelector onDateChange={handleDateChange} onTimeChange={handleTimeChange} />
           <NotiTypeSelector onNotiTypeChange={handleNotiTypeChange} />

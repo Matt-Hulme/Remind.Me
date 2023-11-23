@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Checkbox from '../Buttons/Checkbox';
 
 export default function EmailCaptureField() {
   const [email, setEmail] = useState('');
@@ -35,6 +36,7 @@ export default function EmailCaptureField() {
     <div className="EmailCaptureField">
       <h2 className='MainSubtitle' id="EmailCapturePageH2">Email address</h2>
       <form className="EmailCaptureFieldForm" onSubmit={handleSubmit}>
+        <Checkbox/> 
         <label htmlFor="EmailCaptureTextBox"></label>
         <input
           className="EmailCaptureTextBox"
@@ -44,7 +46,6 @@ export default function EmailCaptureField() {
           value={email}
           onChange={handleEmailChange}
         />
-        <button type="submit">Submit</button>
       </form>
     </div>
   );

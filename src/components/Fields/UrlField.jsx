@@ -7,12 +7,13 @@ export default function UrlField({ onUrlChange }) {
       <h2 className="MainSubtitle">URL</h2>
       <form className="UrlFieldForm">
         <Checkbox />
-        <label htmlFor="UrlTextBox">URL</label>
+        <label htmlFor="UrlTextBox"></label>
         <input
           className="UrlTextBox"
           type="text"
           id="UrlTextBox"
           onChange={onUrlChange}
+          placeholder='www.exampleurl.com'
         />
       </form>
     </div>

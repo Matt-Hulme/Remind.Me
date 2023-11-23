@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import SelectableOptionRectangle from "./SelectableOptionRectangle";
+import SelectableOptionButton from "./SelectableOptionButton";
 
 export default function NotiTypeSelector({ onNotiTypeChange }) {
   const [activeNotiType, setActiveNotiType] = useState ('');
@@ -19,18 +19,18 @@ export default function NotiTypeSelector({ onNotiTypeChange }) {
     <div className="NotiTypeSelectorContainer">
       <div className="NotiTypeSelectorText">Notify me via...</div>
       <div className="NotiTypeSelector">
-        <SelectableOptionRectangle
+        <SelectableOptionButton
           onClick={() => handleNotiTypeSelection("Email")}
           className={activeNotiType === "Email" ? 'NotiTypeActive' : ''}
         >
           Email
-        </SelectableOptionRectangle>
-        <SelectableOptionRectangle
+        </SelectableOptionButton>
+        <SelectableOptionButton
           onClick={() => handleNotiTypeSelection("Browser notification")}
           className={activeNotiType === "Browser notification" ? 'NotiTypeActive' : ''}
         >
           Browser notification
-        </SelectableOptionRectangle>
+        </SelectableOptionButton>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function SelectableOptionRectangle({ children, onClick, className }) {
+export default function SelectableOptionButton({ children, onClick, className }) {
   const handleOptionClick = () => {
     onClick(); 
   };

@@ -1,10 +1,10 @@
-I  might have to change "SelectableOptionRectangle" as I build the onClick functionality 
+I  might have to change "SelectableOptionButton" as I build the onClick functionality 
 
 
 TODO
-  Re-do all spacing/layout
+  Re-do all spacing/layout (REM)
 
-  Clean up Selected Button CSS (selectableoptionrectangle) because it's adding vertical space on the border when it's active
+  Clean up Selected Button CSS (SelectableOptionButton) because it's adding vertical space on the border when it's active
 
   (First Page) Clean up Email Address Submit button (Put the submit functionality within the "Next" Button)
 

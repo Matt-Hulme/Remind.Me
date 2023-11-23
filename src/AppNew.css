@@ -2,12 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 12px;
 }
 
 #root {
   width: fit-content;
 }
-
+/* 
 .EmailCapturePage{
   height: 325px;
   width: 340px;
@@ -32,10 +33,10 @@
 .EmailCapturePageMainContainer {
   height: 157px;
   width: 240px;
-}
+} */
 
 .MainPage{
-  width: 340px;
+  width: 28.3333rem;
   height: auto;
   align-items: center;
   justify-items: center;
@@ -53,12 +54,12 @@
   background-color: #242126;
   height: 100%;
   width: 100%;
-  border-radius: 20px;
-  padding: 50px;
+  border-radius: 1.6666rem;
+  padding: 4.167rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 20px;
+  row-gap: 1.666rem;
 }
 
 
@@ -127,16 +128,16 @@
   top: -20px;
   right: -258px;
 }
-
-
+/* 
 .AppContainerMain {
   width: 240px;
   height: 500px;
-}
+} */
 
 .Mainh1{
   font-size: 25px;
   font-weight: 400;
+  line-height: normal;
 }
 
 .Mainh2{
@@ -145,18 +146,16 @@
 }
 
 .MainSubtitle{
-  font-size: 14px;
-  font-weight: 400;
   align-self: flex-start;
   opacity: 70%;
   color: #FFF;
   font-size: 12px;
   font-weight: 500;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.833rem;
 }
 
 #EmailCapturePageH2{
-  margin-bottom: 5px;
+  margin-bottom: 0.417rem;
 }
 
 .Mainp {
@@ -182,6 +181,7 @@
   background: rgba(255, 255, 255, 0.10);
   border-radius: 2px;
   border: none;
+  padding: 0.417rem;
 }
 
 .EmailCaptureField{
@@ -206,25 +206,31 @@
   padding: 5px;
 }
 
-/* .DateAndTimeSelectorWrapper {
-} */
+.DateAndTimeSelector {
+  display: flex;
+  flex-direction: column;
+}
+
+#DateAndTimeSelectorSubtitle{
+  margin-bottom: 0.8333rem;
+}
 
 .DateSelector{
-  width: 240px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 5px;
+  row-gap: 0.417rem;
   align-items: center;
   align-content: center;
+  margin-bottom: 1.667rem;
 }
 
 .TimeSelector{
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 5px;
+  column-gap: 0.417rem;
 }
 
 .TimeSelector div{
@@ -243,12 +249,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 10px;
+  padding: 0.417rem 0.98rem;
   font-family: Karla;
   color: #FFF;
   font-size: 12px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 14px;
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.15);
   border: none;
@@ -310,9 +316,9 @@
   height: 100%;
 }
 
-.DescriptionContainer {
+/* .DescriptionContainer {
   margin-bottom: 20px
-}
+} */
 
 
 .DescriptionContainer div{
@@ -352,19 +358,23 @@
   opacity: 0.6;
 }
 
-.NotificationTypeSelectorContainer {
+.NotiTypeSelectorContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+}
+
+.Checkbox {
+  border-radius: 0.167rem;
+  border-radius: 10rem;
 }
 
 
-.NotificationTypeSelector{
+.NotiTypeSelector{
   display: flex;
   column-gap: 5px;
 }
 
-.NotificationTypeSelectorText {
+.NotiTypeSelectorText {
   color: #FFF;
   font-family: Karla;
   font-size: 12px;
@@ -380,7 +390,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 70px;
 }
 
 .SaveButton{
@@ -392,7 +401,6 @@
   padding: 5px 20px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   align-self: stretch;
   color: #FFF;
   font-family: Karla;
@@ -402,6 +410,7 @@
   line-height: normal;
   border: none; 
   cursor: pointer; 
+  margin-top: 20px;
 }
 
 .SaveButton:hover {

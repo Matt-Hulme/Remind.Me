@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SelectableOptionRectangle from "./SelectableOptionRectangle";
+import SelectableOptionButton from "./SelectableOptionButton";
 import CalendarButton from "./Buttons/CalendarButton";
 
 export default function DateSelector({ onDateChange }) {
@@ -19,33 +19,33 @@ export default function DateSelector({ onDateChange }) {
 
   return (
     <div className="DateSelector">
-      <SelectableOptionRectangle
+      <SelectableOptionButton
         onClick={() => handleDateSelection('Tomorrow')}
         className={activeDate === 'Tomorrow' ? 'NotiDateActive' : ''}
       >
         <div>Tomorrow</div>
-      </SelectableOptionRectangle>
+      </SelectableOptionButton>
 
-      <SelectableOptionRectangle
+      <SelectableOptionButton
         onClick={() => handleDateSelection('In a week')}
         className={activeDate === 'In a week' ? 'NotiDateActive' : ''}
       >
         <div>In a week</div>
-      </SelectableOptionRectangle>
+      </SelectableOptionButton>
 
-      <SelectableOptionRectangle
+      <SelectableOptionButton
         onClick={() => handleDateSelection('In a month')}
         className={activeDate === 'In a month' ? 'NotiDateActive' : ''}
       >
         <div>In a month</div>
-      </SelectableOptionRectangle>
+      </SelectableOptionButton>
 
-      <SelectableOptionRectangle
+      <SelectableOptionButton
         onClick={() => handleDateSelection('Random day')}
         className={activeDate === 'Random day' ? 'NotiDateActive' : ''}
       >
         <div>Random day</div>
-      </SelectableOptionRectangle>
+      </SelectableOptionButton>
 
       <CalendarButton />
     </div>

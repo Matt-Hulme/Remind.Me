@@ -1,6 +1,6 @@
 import {React, useState} from 'react';
 import ClockButton from './Buttons/ClockButton';
-import SelectableOptionRectangle from './SelectableOptionRectangle';
+import SelectableOptionButton from './SelectableOptionButton';
 
 export default function TimeSelector({ onTimeChange }) {
   const [activeTime, setActiveTime] = useState ('');
@@ -20,7 +20,7 @@ export default function TimeSelector({ onTimeChange }) {
       <div>
         At
       </div>
-      <SelectableOptionRectangle 
+      <SelectableOptionButton 
         onClick={() => handleTimeSelection('8AM')}
         className={activeTime === '8AM' ? 'NotiTimeActive' : ''}
       >
@@ -28,8 +28,8 @@ export default function TimeSelector({ onTimeChange }) {
         <div>
           8AM
         </div>
-      </SelectableOptionRectangle>
-      <SelectableOptionRectangle 
+      </SelectableOptionButton>
+      <SelectableOptionButton 
         onClick={() => handleTimeSelection('12PM')}
         className={activeTime === '12PM' ? 'NotiTimeActive' : ''}
       >
@@ -37,16 +37,16 @@ export default function TimeSelector({ onTimeChange }) {
         <div>
           12PM
         </div>
-      </SelectableOptionRectangle>
+      </SelectableOptionButton>
       
-      <SelectableOptionRectangle 
+      <SelectableOptionButton 
         onClick={() => handleTimeSelection('5PM')}
         className={activeTime === '5PM' ? 'NotiTimeActive' : ''}
       >
         <div>
           5PM
         </div>
-      </SelectableOptionRectangle>
+      </SelectableOptionButton>
       <ClockButton />
     </div>
   );

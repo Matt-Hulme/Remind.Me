@@ -6,10 +6,9 @@ import Description from './Description';
 export default function DateAndTimeSelector({ onDateChange, onTimeChange }) {
   return (
     <div className="DateAndTimeSelector">
-      <h2 className="MainSubtitle">Remind Me...</h2>
+      <h2 className="MainSubtitle" id="DateAndTimeSelectorSubtitle">Remind Me...</h2>
       <DateSelector onDateChange={onDateChange} />
       <TimeSelector onTimeChange={onTimeChange} />
-      <Description />
     </div>
   );
 }

@@ -3,6 +3,7 @@ I  might have to change "SelectableOptionButton" as I build the onClick function
 
 TODO
   Re-do all spacing/layout (REM)
+    Convert all PX to REM
 
   Clean up Selected Button CSS (SelectableOptionButton) because it's adding vertical space on the border when it's active
 

@@ -39,15 +39,7 @@ export default function DateSelector({ onDateChange }) {
       >
         <div>In a month</div>
       </SelectableOptionButton>
-
-      <SelectableOptionButton
-        onClick={() => handleDateSelection('Random day')}
-        className={activeDate === 'Random day' ? 'NotiDateActive' : ''}
-      >
-        <div>Random day</div>
-      </SelectableOptionButton>
-
-      <CalendarButton />
+      {/* <CalendarButton /> */}
     </div>
   );
 }

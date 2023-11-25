@@ -47,7 +47,7 @@ export default function TimeSelector({ onTimeChange }) {
           5PM
         </div>
       </SelectableOptionButton>
-      <ClockButton />
+      {/* <ClockButton /> */}
     </div>
   );
 }

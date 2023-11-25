@@ -3,11 +3,12 @@ I  might have to change "SelectableOptionButton" as I build the onClick function
 
 TODO
   Re-do all spacing/layout (REM)
-    Convert all PX to REM
+    DONE Convert all PX to REM
+    Fix Textbox multi-line issue (want the input to be aligned to top, and for the box to dynamically resize vertically)
 
-  Clean up Selected Button CSS (SelectableOptionButton) because it's adding vertical space on the border when it's active
+  DONE Clean up Selected Button CSS (SelectableOptionButton) because it's adding vertical space on the border when it's active
 
-  (First Page) Clean up Email Address Submit button (Put the submit functionality within the "Next" Button)
+  DONE (email form added to main page) (First Page) Clean up Email Address Submit button (Put the submit functionality within the "Next" Button)
 
   *Clean-up Close Button (use CloseButton2 now) (wtf is going on here Matt)
 
@@ -17,10 +18,13 @@ TODO
 
   *Login
 
-  *Authentication
+  *Authentication (Email, URL, Description)
+    Change the checkbox on Email and URL to being active when the input has been validated
 
   *CSS Sections/grouping
     [Buttons section?, ]
 
   *PremiumVersion
-  `
+  
+
+  *"You have 5 more URLs to save on the free version, Premium version coming soon"

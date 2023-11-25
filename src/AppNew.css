@@ -1,20 +1,22 @@
-* {
+html {
+  font-size: 12px;
+}
+
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 0.75rem; /* 12px converted to rem */
 }
-
 #root {
   width: fit-content;
 }
 
 .EmailCapturePage{
-  height: 21.6667rem; /* 325px converted to rem */
-  width: 22.2222rem; /* 340px converted to rem */
+  height: 27.0833rem;
+  width: 28.3333rem;
   background-color: #242126;
-  border-radius: 1.6667rem; /* 20px converted to rem */
-  padding: 3.4722rem; /* 50px converted to rem */
+  border-radius: 1.66667rem;
+  padding: 4.16667rem;
   font-family: Karla;
   font-style: normal;
   color: #FFFF;
@@ -27,16 +29,16 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  row-gap: 1.3889rem; /* 20px converted to rem */
+  row-gap: 1.66667rem;
 }
 
 .EmailCapturePageMainContainer {
-  height: 10.4167rem; /* 157px converted to rem */
-  width: 16.6667rem; /* 240px converted to rem */
+  height: 13.0833rem;
+  width: 20rem;
 }
 
-.MainPage {
-  width: 1.8889rem; /* 28.3333px converted to rem */
+.MainPage{
+  width: 28.3333rem;
   height: auto;
   align-items: center;
   justify-items: center;
@@ -45,7 +47,7 @@
   color: #FFFF;
 }
 
-.MainPageWrapper {
+.MainPageWrapper{
   height: 100%;
   width: 100%;
 }
@@ -54,48 +56,47 @@
   background-color: #242126;
   height: 100%;
   width: 100%;
-  border-radius: 1.6667rem; /* 20px converted to rem */
-  padding: 4.1667rem; /* 50px converted to rem */
+  border-radius: 1.66667rem;
+  padding: 4.16667rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 1.6667rem; /* 25px converted to rem */
+  row-gap: 1.66667rem;
 }
 
 .ConfirmationPage{
-  height: 21.1667rem; /* 317px converted to rem */
-  width: 22.2222rem; /* 340px converted to rem */
+  height: 26.4167rem;
+  width: 28.3333rem;
   background-color: #242126;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  border-radius: 1.6667rem; /* 20px converted to rem */
+  border-radius: 1.66667rem;
   font-family: Karla;
   font-style: normal;
   color: #FFFF;
 }
 
-.ConfirmationPageContainer {
+.ConfirmationPageContainer{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-  padding: 3.4722rem; /* 50px converted to rem */
+  padding: 4.16667rem;
 }
 
-.ConfirmationPageMainContainer {
+.ConfirmationPageMainContainer{
   height: fit-content;
   width: 100%;
 }
 
-
 .CloseButton {
   position: relative;
-  top: -2.4444rem; /* -29px converted to rem */
-  right: -9.8333rem; /* -147px converted to rem */
-  width: 1.3333rem; /* 20px converted to rem */
-  height: 1.3333rem; /* 20px converted to rem */
+  top: -2.41667rem;
+  right: -12.25rem;
+  width: 1.66667rem; 
+  height: 1.66667rem;
 }
 
 .CloseButton::before,
@@ -103,7 +104,7 @@
   content: '';
   position: absolute;
   width: 100%;
-  height: 0.1111rem; /* 2px converted to rem */
+  height: 0.16667rem; 
   background-color: #fff;
   top: 50%;
   transform: translateY(-50%);
@@ -117,92 +118,85 @@
   transform: rotate(-45deg);
 }
 
-.CloseButton2 {
-  /* width: fit-content; */
+.CloseButton2{
   height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -1.3333rem; /* -20px converted to rem */
-  right: -17.25rem; /* -258px converted to rem */
+  top: -1.66667rem;
+  right: -21.5rem;
 }
 
-.AppContainerMain {
-  width: 16.6667rem; /* 240px converted to rem */
-  height: 33.3333rem; /* 500px converted to rem */
-}
-
-
-.Mainh1 {
-  font-size: 2.083rem;
+.Mainh1{
+  font-size: 2.08333rem;
   font-weight: 400;
   line-height: normal;
 }
 
-.Mainh2 {
-  font-size: 1rem; /* 15px converted to rem */
+.Mainh2{
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
-.MainSubtitle {
+.MainSubtitle{
   align-self: flex-start;
   opacity: 70%;
   color: #FFF;
-  font-size: 0.8333rem; /* 12px converted to rem */
+  font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 0.0556rem; /* 0.833px converted to rem */
+  margin-bottom: 0.83333rem;
 }
 
-#EmailCapturePageH2 {
-  margin-bottom: 0.0278rem; /* 0.417px converted to rem */
+#EmailCapturePageH2{
+  margin-bottom: 0.41667rem;
 }
 
 .Mainp {
   align-self: stretch;
   color: #FFF;
   font-family: Karla;
-  font-size: 1rem; /* 15px converted to rem */
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.3333rem; /* 20px converted to rem */
+  line-height: 1.66667rem;
 }
 
-.UrlFieldForm {
-  border-radius: 0.1111rem; /* 2px converted to rem */
-  width: 1.3333rem; /* 24px converted to rem */
-  height: 0.6667rem; /* 24px converted to rem */
-  display: flex;
+.UrlFieldForm{
+  border-radius: 0.16667rem;
+  width: 20rem;
+  height: 2rem;
+  display:flex;
 }
 
-.UrlTextBox {
+.UrlTextBox{
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.10);
-  border-radius: 0.1111rem; /* 2px converted to rem */
+  border-radius: 0.16667rem;
   border: none;
-  padding: 0.0556rem; /* 0.417px converted to rem */
+  padding: 0.41667rem;
 }
 
-.EmailCaptureField {
-  margin-bottom: 0;
-  padding-bottom: 0;
+.EmailCaptureField{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
-.EmailCaptureFieldForm {
-  border-radius: 0.1111rem; /* 2px converted to rem */
-  width: 1.3333rem; /* 24px converted to rem */
-  height: 0.6667rem; /* 24px converted to rem */
-  display: flex;
+.EmailCaptureFieldForm{
+  border-radius: 0.16667rem;
+  width: 20rem;
+  height: 2rem;
+  display:flex;
 }
 
-.EmailCaptureTextBox {
+.EmailCaptureTextBox{
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.10);
-  border-radius: 0.1111rem; /* 2px converted to rem */
+  border-radius: 0.16667rem;
   border: none;
-  padding: 0.2778rem; /* 5px converted to rem */
+  padding: 0.83333rem;
 }
 
 .DateAndTimeSelector {
@@ -210,32 +204,32 @@
   flex-direction: column;
 }
 
-#DateAndTimeSelectorSubtitle {
-  margin-bottom: 0.8333rem;
+#DateAndTimeSelectorSubtitle{
+  margin-bottom: 0.83333rem;
 }
 
-.DateSelector {
+.DateSelector{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 0.417rem;
+  row-gap: 0.41667rem;
   align-items: center;
   align-content: center;
-  margin-bottom: 1.6667rem; /* 25px converted to rem */
+  margin-bottom: 1.66667rem;
 }
 
-.TimeSelector {
+.TimeSelector{
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 0.417rem;
+  column-gap: 0.41667rem;
 }
 
-.TimeSelector div {
+.TimeSelector div{
   color: #FFF;
   font-family: Karla;
-  font-size: 0.8333rem; /* 12px converted to rem */
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -248,13 +242,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.417rem 0.98rem;
+  padding: 0.41667rem 0.98167rem;
   font-family: Karla;
   color: #FFF;
-  font-size: 0.8333rem; /* 12px converted to rem */
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 0.9333rem; /* 14px converted to rem */
-  border-radius: 0.1111rem; /* 2px converted to rem */
+  line-height: 1.16667rem;
+  border-radius: 0.16667rem;
   background: rgba(255, 255, 255, 0.15);
   border: none;
   cursor: pointer;
@@ -263,19 +257,19 @@
 .NotiDateActive {
   background: rgba(255, 255, 255, 0.15);
   color: #FFF;
-  outline: 0.1111rem solid white; /* 1px converted to rem */
+  outline: 0.08333rem solid white;
 }
 
 .NotiTimeActive {
   background: rgba(255, 255, 255, 0.15);
   color: #FFF;
-  outline: 0.1111rem solid white; /* 1px converted to rem */
+  outline: 0.08333rem solid white;
 }
 
 .NotiTypeActive {
   background: rgba(255, 255, 255, 0.15);
   color: #FFF;
-  outline: 0.1111rem solid white; /* 1px converted to rem */
+  outline: 0.08333rem solid white;
 }
 
 .SelectableOptionButton.active:hover {
@@ -286,12 +280,12 @@
   opacity: 0.5;
 }
 
-.CalendarButton {
-  width: 1.3333rem; /* 24px converted to rem */
-  height: 1.3333rem; /* 24px converted to rem */
+.CalendarButton{
+  width: 2rem;
+  height: 2rem;
   background-color: rgba(255, 255, 255, 0.15);
-  padding: 0.2778rem; /* 4px converted to rem */
-  border-radius: 0.1111rem; /* 2px converted to rem */
+  padding: 0.33333rem;
+  border-radius: 0.16667rem;
 }
 
 .CalendarButton img {
@@ -299,12 +293,12 @@
   height: 100%;
 }
 
-.ClockButton {
-  width: 1.3333rem; /* 24px converted to rem */
-  height: 1.3333rem; /* 24px converted to rem */
+.ClockButton{
+  width: 2rem;
+  height: 2rem;
   background-color: rgba(255, 255, 255, 0.15);
-  padding: 0.2778rem; /* 4px converted to rem */
-  border-radius: 0.1111rem; /* 2px converted to rem */
+  padding: 0.33333rem;
+  border-radius: 0.16667rem;
 }
 
 .ClockButton img {
@@ -312,10 +306,10 @@
   height: 100%;
 }
 
-.DescriptionContainer div {
+.DescriptionContainer div{
   color: #FFF;
   font-family: Karla;
-  font-size: 0.8333rem; /* 12px converted to rem */
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -326,23 +320,23 @@
   width: 100%;
 }
 
-.DescriptionTextBox {
+.DescriptionTextBox{
   display: flex;
   width: 100%;
-  height: 4rem; /* 60px converted to rem */
+  height: 5rem;
   background: rgba(255, 255, 255, 0.10);
-  border-radius: 0.1111rem; /* 2px converted to rem */
+  border-radius: 0.16667rem;
   border: none;
-  margin-top: 1.6667rem; /* 10px converted to rem */
+  margin-top: 0.83333333rem;
 }
 
-.DescriptionTextBox::placeholder {
+.DescriptionTextBox::placeholder{
   position: absolute;
-  top: 0.2778rem; /* 5px converted to rem */
-  left: 0.2778rem; /* 5px converted to rem */
+  top: 0.41667rem;
+  left: 0.41667rem;
   color: #FFF;
   font-family: Karla;
-  font-size: 0.8333rem; /* 12px converted to rem */
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -355,134 +349,131 @@
 }
 
 .Checkbox {
-  border-radius: 0.167rem; /* 10px converted to rem */
+  border-radius: 0.16667rem;
 }
 
-.NotiTypeSelector {
+.NotiTypeSelector{
   display: flex;
-  column-gap: 0.2778rem; /* 5px converted to rem */
+  column-gap: 0.41667rem;
 }
 
 .NotiTypeSelectorText {
   color: #FFF;
   font-family: Karla;
-  font-size: 0.8333rem; /* 12px converted to rem */
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   opacity: 0.7;
-  margin-bottom: 1.6667rem; /* 10px converted to rem */
+  margin-bottom: 1.66667rem;
 }
-.SaveButtonContainer {
-  display: flex;
+
+.SaveButtonContainer{
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-.SaveButton {
+.SaveButton{
   width: 100%;
-  height: 1.8667rem; /* 28px converted to rem */
-  border-radius: 0.9333rem; /* 14px converted to rem */
+  height: 2.33333333rem;
+  border-radius: 1.1666666667rem;
   background: #6F6A72;
   display: flex;
-  padding: 0.417rem 1.667rem;
+  padding: 0.41667rem 1.66667rem;
   justify-content: center;
   align-items: center;
   align-self: stretch;
   color: #FFF;
   font-family: Karla;
-  font-size: 1.6667rem; /* 15px converted to rem */
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border: none;
-  cursor: pointer;
-  margin-top: 1.3333rem; /* 20px converted to rem */
+  border: none; 
+  cursor: pointer; 
+  margin-top: 1.66667rem;
 }
 
 .SaveButton:hover {
   opacity: 0.5;
 }
 
-.NextButtonContainer {
-  display: flex;
+.NextButtonContainer{
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 4.6667rem; /* 70px converted to rem */
+  height: 4.66667rem;
 }
 
-.NextButton {
-  width: 16rem; /* 240px converted to rem */
-  height: 1.8667rem; /* 28px converted to rem */
-  border-radius: 0.9333rem; /* 14px converted to rem */
+.NextButton{
+  width: 20rem;
+  height: 1.16667rem;
+  border-radius: 0.58333rem;
   background: #6F6A72;
   display: flex;
-  padding: 0.417rem 1.333rem; /* 5px 20px converted to rem */
+  padding: 0.83333rem 3.33333rem;
   justify-content: center;
   align-items: center;
-  gap: 0.6667rem; /* 10px converted to rem */
+  gap: 1.66667rem;
   align-self: stretch;
   color: #FFF;
   font-family: Karla;
-  font-size: 1.6667rem; /* 15px converted to rem */
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   border: none;
 }
 
-.NextButton div {
+.NextButton div{
   color: #FFF;
   font-family: Karla;
-  font-size: 1.6667rem; /* 15px converted to rem */
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.UpgradeButtonContainer {
-  display: flex;
+.UpgradeButtonContainer{
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 4.6667rem; /* 70px converted to rem */
+  height: 4.66667rem;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
 
-.UpgradeButton {
-  width: 16rem; /* 240px converted to rem */
-  height: 1.8667rem; /* 28px converted to rem */
-  border-radius: 0.9333rem; /* 14px converted to rem */
+.UpgradeButton{
+  width: 20rem;
+  height: 1.16667rem;
+  border-radius: 0.58333rem;
   background: #F43E80;
   display: flex;
-  padding: 0.417rem 1.333rem; /* 5px 20px converted to rem */
+  padding: 0.83333rem 3.33333rem;
   justify-content: center;
   align-items: center;
-  gap: 0.6667rem; /* 10px converted to rem */
+  gap: 1.66667rem;
   align-self: stretch;
   color: #FFF;
   font-family: Karla;
-  font-size: 1.6667rem; /* 15px converted to rem */
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   border: none;
 }
 
-.UpgradeButton div {
+.UpgradeButton div{
   color: #FFF;
   font-family: Karla;
-  font-size: 1.6667rem; /* 15px converted to rem */
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-
-
-
-
 
 

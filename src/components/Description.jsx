@@ -4,9 +4,9 @@ import DescriptionField from './Fields/DescriptionField.jsx'
 export default function Description () {
     return (
         <div className="DescriptionContainer">
-            <div>
+            <h2 className='MainSubtitle'>
                 Add a description
-            </div>
+            </h2>
             <DescriptionField />
         </div>
     )

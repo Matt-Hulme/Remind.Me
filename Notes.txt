@@ -2,6 +2,10 @@ I  might have to change "SelectableOptionButton" as I build the onClick function
 
 
 TODO
+
+  Add validation in URLField (similar to EmailField)
+    Fix changing Icon as well
+
   Re-do all spacing/layout (REM)
     DONE Convert all PX to REM
     Fix Textbox multi-line issue (want the input to be aligned to top, and for the box to dynamically resize vertically)

@@ -1,11 +1,22 @@
-import CheckboxIcon from '../../assets/CheckboxIcon.svg'
+import React from 'react';
+import CheckboxIconDefault from '../../assets/CheckboxIconDefault.svg';
+import CheckboxIconPass from '../../assets/CheckboxIconPass.svg';
+import CheckboxIconFail from '../../assets/CheckboxIconFail.svg';
 
+export default function Checkbox({ passFail, isTextboxEmpty }) {
+  let checkboxImage;
 
-export default function Checkbox () {
-    return(
-        <div className="Checkbox">
-            <img src={CheckboxIcon} alt="Checkbox">
-            </img>
-        </div>        
-    )
+  if (isTextboxEmpty) {
+    checkboxImage = CheckboxIconDefault;
+  } else if (passFail) {
+    checkboxImage = CheckboxIconPass;
+  } else {
+    checkboxImage = CheckboxIconFail;
+  }
+
+  return (
+    <div className="Checkbox">
+      {checkboxImage && <img src={checkboxImage} alt="Checkbox" />}
+    </div>
+  );
 }

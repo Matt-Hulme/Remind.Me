@@ -4,6 +4,7 @@ import Checkbox from '../Buttons/Checkbox';
 export default function EmailCaptureField() {
   const [email, setEmail] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(true);
+  const [isTextboxEmpty, setIsTextboxEmpty] = useState(true);
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -11,6 +12,7 @@ export default function EmailCaptureField() {
     const newEmail = event.target.value;
     setEmail(newEmail);
     setIsValidEmail(emailRegex.test(newEmail));
+    setIsTextboxEmpty(newEmail.trim() === '');
   };
 
   const handleSubmit = async (event) => {
@@ -31,10 +33,8 @@ export default function EmailCaptureField() {
       });
 
       if (response.ok) {
-        // Handle success, e.g., show a confirmation message to the user
         console.log('Email sent successfully');
       } else {
-        // Handle errors, e.g., show an error message
         console.error('Email sending failed');
       }
     } catch (error) {
@@ -46,7 +46,7 @@ export default function EmailCaptureField() {
     <div className="EmailCaptureField">
       <h2 className='MainSubtitle' id="EmailCapturePageH2">Email address</h2>
       <form className="EmailCaptureFieldForm" onSubmit={handleSubmit}>
-        <Checkbox />
+      <Checkbox passFail={isValidEmail} isTextboxEmpty={isTextboxEmpty}/>
         <label htmlFor="EmailCaptureTextBox"></label>
         <input
           className={`EmailCaptureTextBox ${isValidEmail ? '' : 'invalid'}`}

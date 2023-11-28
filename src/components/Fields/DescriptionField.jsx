@@ -1,10 +1,15 @@
-export default function DescriptionField (){
+import React from 'react';
+
+export default function DescriptionField() {
   return (
     <div className="DescriptionField">
       <form className="DescriptionFieldForm">
-        <label htmlFor ="DescriptionTextBox"></label>
-        <input className="DescriptionTextBox" type="text" placeholder="Optional"></input>
+        <label htmlFor="DescriptionTextBox"></label>
+        <textarea
+          className="DescriptionTextBox"
+          placeholder="Optional"
+        ></textarea>
       </form>
     </div>
-  )
+  );
 }

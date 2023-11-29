@@ -8,10 +8,17 @@ import EmailCaptureField from '../Fields/EmailCaptureField.jsx';
 import Description from '../Description.jsx';
 
 export default function MainPage() {
+  const [email, setEmail] = useState('');
   const [url, setUrl] = useState('');
+  const [description, setDescription] = useState('');
   const [notiDate, setNotiDate] = useState('');
   const [notiTime, setNotiTime] = useState('');
   const [notiType, setNotiType] = useState('');
+
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  }
 
   const handleUrlChange = (event) => {
     setUrl(event.target.value);
@@ -25,6 +32,10 @@ export default function MainPage() {
     setNotiTime(newTime);
   };
 
+  const handleDescriptionChange = (event) => {
+    setDescription(event.target.value)
+  }
+
   const handleNotiTypeChange = (selectedType) => {
     setNotiType(selectedType);
   };
@@ -35,11 +46,11 @@ export default function MainPage() {
         <div className='MainPageMainContainer'>
           <h1 className="Mainh1">Enter email</h1>
           <h2 className="Mainh2">We'll only use it to send you URL reminders—never to advertise.</h2>
-          <EmailCaptureField />
+          <EmailCaptureField onEmailChange={handleEmailChange}/>
           <h1 className="Mainh1">Remind me about this URL</h1>
           <UrlField onUrlChange={handleUrlChange} />
           <DateAndTimeSelector onDateChange={handleDateChange} onTimeChange={handleTimeChange} />
-          <Description />
+          <Description onDescriptionChange={handleDescriptionChange}/>
           <NotiTypeSelector onNotiTypeChange={handleNotiTypeChange} />
           <SaveButton
             url={url}

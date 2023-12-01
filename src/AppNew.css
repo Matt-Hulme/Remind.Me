@@ -334,7 +334,7 @@ html {
   border-radius: 0.16667rem;
   border: none;
   padding: 0.41667rem;
-  position: relative; /* Set container as a positioning context for absolute positioning */
+  position: relative;
   overflow-x: hidden;
   resize: none;
   overflow-y: hidden;

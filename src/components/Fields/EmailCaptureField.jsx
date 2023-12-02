@@ -9,7 +9,7 @@ export default function EmailCaptureField({ onEmailChange, isValidEmail, isEmail
         <Checkbox passFail={isValidEmail} isTextboxEmpty={isEmailTextboxEmpty} />
         <label htmlFor="EmailCaptureTextBox"></label>
         <input
-          className={`EmailCaptureTextBox ${isValidEmail ? '' : 'invalid'}`}
+          className="EmailCaptureTextBox"
           type="text"
           id="EmailCaptureTextBox"
           placeholder="forgetfulfred@remind.me"

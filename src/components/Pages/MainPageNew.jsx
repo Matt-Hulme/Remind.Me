@@ -42,7 +42,7 @@ export default function MainPage() {
     const newEmail = event.target.value;
     setEmail(newEmail);
     setIsValidEmail(emailRegex.test(newEmail));
-    setIsEmailTextboxEmpty(newEmail.trim() === '');
+    setIsEmailTextboxEmpty(false);
   }
 
 
@@ -82,7 +82,7 @@ export default function MainPage() {
           <EmailCaptureField
             onEmailChange={handleEmailChange}
             isValidEmail={isValidEmail}
-            isTextboxEmpty={isEmailTextboxEmpty}
+            isEmailTextboxEmpty={isEmailTextboxEmpty}
             onSubmit={handleSubmit}
           />
           <h1 className="Mainh1">Remind me about this URL</h1>

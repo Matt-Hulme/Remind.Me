@@ -18,6 +18,13 @@ export default function MainPage() {
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+  const handleEmailChange = (event) => {
+    const newEmail = event.target.value;
+    setEmail(newEmail);
+    setIsValidEmail(emailRegex.test(newEmail));
+    setIsTextboxEmpty(newEmail.trim() === '');
+  };
+
   const handleUrlChange = (event) => {
     setUrl(event.target.value);
   };
@@ -45,12 +52,7 @@ export default function MainPage() {
           <h1 className="Mainh1">Enter email</h1>
           <h2 className="Mainh2">We'll only use it to send you URL reminders—never to advertise.</h2>
           <EmailCaptureField
-            onEmailChange={(event) => {
-              const newEmail = event.target.value;
-              setEmail(newEmail);
-              setIsValidEmail(emailRegex.test(newEmail));
-              setIsTextboxEmpty(newEmail.trim() === '');
-            }}
+            onEmailChange={handleEmailChange}
             isValidEmail={isValidEmail}
             isTextboxEmpty={isTextboxEmpty}
           />

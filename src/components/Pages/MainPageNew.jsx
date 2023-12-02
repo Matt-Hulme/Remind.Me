@@ -18,13 +18,6 @@ export default function MainPage() {
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  const handleEmailChange = (event) => {
-    const newEmail = event.target.value;
-    setEmail(newEmail);
-    setIsValidEmail(emailRegex.test(newEmail));
-    setIsTextboxEmpty(newEmail.trim() === '');
-  };
-
   const handleUrlChange = (event) => {
     setUrl(event.target.value);
   };
@@ -45,6 +38,41 @@ export default function MainPage() {
     setNotiType(selectedType);
   };
 
+  const handleEmailChange=(event) => {
+    const newEmail = event.target.value;
+    setEmail(newEmail);
+    setIsValidEmail(emailRegex.test(newEmail));
+    setIsTextboxEmpty(newEmail.trim() === '');
+  }
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!isValidEmail) {
+      console.error('Invalid email address');
+      return;
+    }
+
+    try {
+      const response = await fetch('http://localhost:3000/create-reminder', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        console.log('Email sent successfully');
+      } else {
+        console.error('Email sending failed');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
   return (
     <div className='MainPage'>
       <div className='MainPageWrapper'>
@@ -55,6 +83,7 @@ export default function MainPage() {
             onEmailChange={handleEmailChange}
             isValidEmail={isValidEmail}
             isTextboxEmpty={isTextboxEmpty}
+            onSubmit={handleSubmit}
           />
           <h1 className="Mainh1">Remind me about this URL</h1>
           <UrlField onUrlChange={handleUrlChange} />

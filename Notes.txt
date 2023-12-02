@@ -3,6 +3,8 @@ I  might have to change "SelectableOptionButton" as I build the onClick function
 
 TODO
 
+  handle error path when clicking submit (invalidEmail, invalidURL, noDate, noTime, invalidDescription, noNotiType)
+
   Add validation in URLField (similar to EmailField)
     Fix changing Icon as well
 

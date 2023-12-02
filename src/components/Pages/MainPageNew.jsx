@@ -14,7 +14,7 @@ export default function MainPage() {
   const [notiTime, setNotiTime] = useState('');
   const [notiType, setNotiType] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(true);
-  const [isTextboxEmpty, setIsTextboxEmpty] = useState(true);
+  const [isEmailTextboxEmpty, setIsEmailTextboxEmpty] = useState(true);
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -42,7 +42,7 @@ export default function MainPage() {
     const newEmail = event.target.value;
     setEmail(newEmail);
     setIsValidEmail(emailRegex.test(newEmail));
-    setIsTextboxEmpty(newEmail.trim() === '');
+    setIsEmailTextboxEmpty(newEmail.trim() === '');
   }
 
 
@@ -82,7 +82,7 @@ export default function MainPage() {
           <EmailCaptureField
             onEmailChange={handleEmailChange}
             isValidEmail={isValidEmail}
-            isTextboxEmpty={isTextboxEmpty}
+            isTextboxEmpty={isEmailTextboxEmpty}
             onSubmit={handleSubmit}
           />
           <h1 className="Mainh1">Remind me about this URL</h1>

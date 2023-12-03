@@ -7,19 +7,33 @@ import NotiTypeSelector from '../NotiTypeSelector.jsx';
 import SaveButton from '../Buttons/SaveButton.jsx';
 
 export default function MainPage() {
-  const [email, setEmail] = useState('');
-  const [url, setUrl] = useState('');
   const [description, setDescription] = useState('');
+  const [email, setEmail] = useState('');
+  const [isValidEmail, setIsValidEmail] = useState(true);
+  const [isValidUrl, setIsValidUrl] = useState(true);
+  const [isEmailTextboxEmpty, setIsEmailTextboxEmpty] = useState(true);
+  const [isUrlTextboxEmpty, setIsUrlTextboxEmpty] = useState(true);
   const [notiDate, setNotiDate] = useState('');
   const [notiTime, setNotiTime] = useState('');
   const [notiType, setNotiType] = useState('');
-  const [isValidEmail, setIsValidEmail] = useState(true);
-  const [isEmailTextboxEmpty, setIsEmailTextboxEmpty] = useState(true);
+  const [url, setUrl] = useState('');
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+  const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+
+  const handleEmailChange=(event) => {
+    const newEmail = event.target.value;
+    setEmail(newEmail);
+    setIsValidEmail(emailRegex.test(newEmail));
+    setIsEmailTextboxEmpty(false);
+  }
+
   const handleUrlChange = (event) => {
-    setUrl(event.target.value);
+    const newUrl = event.target.value;
+    setUrl(newUrl);
+    setIsValidUrl(urlRegex.test(newUrl));
+    setIsUrlTextboxEmpty(false);
   };
 
   const handleDateChange = (newDate) => {
@@ -38,12 +52,6 @@ export default function MainPage() {
     setNotiType(selectedType);
   };
 
-  const handleEmailChange=(event) => {
-    const newEmail = event.target.value;
-    setEmail(newEmail);
-    setIsValidEmail(emailRegex.test(newEmail));
-    setIsEmailTextboxEmpty(false);
-  }
 
 
   const handleSubmit = async (event) => {
@@ -83,10 +91,13 @@ export default function MainPage() {
             onEmailChange={handleEmailChange}
             isValidEmail={isValidEmail}
             isEmailTextboxEmpty={isEmailTextboxEmpty}
-            onSubmit={handleSubmit}
           />
           <h1 className="Mainh1">Remind me about this URL</h1>
-          <UrlField onUrlChange={handleUrlChange} />
+          <UrlField 
+            onUrlChange={handleUrlChange} 
+            isValidUrl={isValidUrl}
+            isUrlTextboxEmpty={isUrlTextboxEmpty}
+          />
           <DateAndTimeSelector onDateChange={handleDateChange} onTimeChange={handleTimeChange} />
           <Description onDescriptionChange={handleDescriptionChange}/>
           <NotiTypeSelector onNotiTypeChange={handleNotiTypeChange} />

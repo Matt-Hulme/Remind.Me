@@ -2,19 +2,9 @@ I  might have to change "SelectableOptionButton" as I build the onClick function
 
 
 TODO
-
   handle error path when clicking submit (invalidEmail, invalidURL, noDate, noTime, invalidDescription, noNotiType)
 
-  Add validation in URLField (similar to EmailField)
-    Fix changing Icon as well
-
-  Re-do all spacing/layout (REM)
-    DONE Convert all PX to REM
-    Fix Textbox multi-line issue (want the input to be aligned to top, and for the box to dynamically resize vertically)
-
-  DONE Clean up Selected Button CSS (SelectableOptionButton) because it's adding vertical space on the border when it's active
-
-  DONE (email form added to main page) (First Page) Clean up Email Address Submit button (Put the submit functionality within the "Next" Button)
+  *Auto-populate Email (if logged in), and URL
 
   *Clean-up Close Button (use CloseButton2 now) (wtf is going on here Matt)
 
@@ -24,13 +14,36 @@ TODO
 
   *Login
 
+  *Confirmation
+
   *Authentication (Email, URL, Description)
-    Change the checkbox on Email and URL to being active when the input has been validated
+    DONE Change the checkbox on Email and URL to being active when the input has been validated
+    Improve Email validation (no confirmation email)
+    Improve URL Validation
 
   *CSS Sections/grouping
     [Buttons section?, ]
 
   *PremiumVersion
-  
+    Confirmation Screen
+      "You have 5 more URLs to save on the free version, Premium version coming soon"
 
-  *"You have 5 more URLs to save on the free version, Premium version coming soon"
+  DONE Add validation in URLField (similar to EmailField)
+    Fix changing Icon as well
+
+  DONE Re-do all spacing/layout (REM)
+    DONE Convert all PX to REM
+    Fix Textbox multi-line issue (want the input to be aligned to top, and for the box to dynamically resize vertically)
+
+  DONE Clean up Selected Button CSS (SelectableOptionButton) because it's adding vertical space on the border when it's active
+
+  DONE (email form added to main page) (First Page) Clean up Email Address Submit button (Put the submit functionality within the "Next" Button)
+
+
+Future functionality 
+  Save multiple URLs on one tab
+  Preferences
+
+  Premium Features?
+    Edit saved notifications
+    Subscription Page

@@ -1,7 +1,7 @@
 import React from 'react';
 import Checkbox from '../Buttons/Checkbox.jsx';
 
-export default function UrlField({ onUrlChange, isValidUrl, isUrlTextboxEmpty }) {
+export default function UrlField({ onNotiUrlChange, isValidUrl, isUrlTextboxEmpty }) {
   return (
     <div className="UrlField">
       <h2 className="MainSubtitle">URL</h2>
@@ -15,7 +15,7 @@ export default function UrlField({ onUrlChange, isValidUrl, isUrlTextboxEmpty })
           className="UrlTextBox"
           type="text"
           id="UrlTextBox"
-          onChange={onUrlChange}
+          onChange={onNotiUrlChange}
           placeholder='www.exampleurl.com'
         />
       </form>

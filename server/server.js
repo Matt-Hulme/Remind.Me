@@ -27,20 +27,20 @@ app.use(cors());
 app.use(express.json());
 
 app.post('/create-reminder', (req, res) => {
-  const { email, dateTime, message, messageCount } = req.body;
+  const { email, url, notiDate, notiTime, notiDescription, notiType } = req.body;
 
   // Define your MySQL query to insert data
-  const sql = 'INSERT INTO reminders (email, dateTime, message, messageCount) VALUES (?, ?, ?, ?)';
-  const values = [email, dateTime, message, numMessages];
+  const sql = 'INSERT INTO reminders (email, url, notiDate, notiTime, notiDescription, notiType) VALUES (?, ?, ?, ?, ?, ?)';
+  const values = [email, url, notiDate, notiTime, notiDescription, notiType];
 
   // Execute the query
   connection.query(sql, values, (err, result) => {
     if (err) {
       console.error('Error inserting reminder into MySQL:', err);
-      res.status(500).json({ message: 'Internal Server Error' });
+      res.status(500).json({ description: 'Internal Server Error' });
     } else {
       console.log('Reminder saved to MySQL database:', req.body);
-      res.json({ message: 'Remind.me Notification Saved' });
+      res.json({ description: 'Remind.me Notification Saved' });
     }
   });
 });

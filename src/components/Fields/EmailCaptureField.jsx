@@ -1,7 +1,7 @@
 import React from 'react';
 import Checkbox from '../Buttons/Checkbox';
 
-export default function EmailCaptureField({ onEmailChange, isValidEmail, isEmailTextboxEmpty}) {
+export default function EmailCaptureField({ onNotiEmailChange, isValidEmail, isEmailTextboxEmpty}) {
   return (
     <div className="EmailCaptureField">
       <h2 className='MainSubtitle' id="EmailCapturePageH2">Email address</h2>
@@ -16,7 +16,7 @@ export default function EmailCaptureField({ onEmailChange, isValidEmail, isEmail
           type="text"
           id="EmailCaptureTextBox"
           placeholder="forgetfulfred@remind.me"
-          onChange={onEmailChange}
+          onChange={onNotiEmailChange}
         />
       </form>
       {!isValidEmail && (

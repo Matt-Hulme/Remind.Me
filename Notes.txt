@@ -1,6 +1,3 @@
-I  might have to change "SelectableOptionButton" as I build the onClick functionality 
-
-
 TODO
   handle error path when clicking submit (invalidEmail, invalidURL, noDate, noTime, invalidDescription, noNotiType)
 
@@ -39,7 +36,7 @@ TODO
 
   DONE (email form added to main page) (First Page) Clean up Email Address Submit button (Put the submit functionality within the "Next" Button)
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------
 Future functionality 
   Save multiple URLs on one tab
   Preferences

@@ -2,7 +2,7 @@ html {
   font-size: 12px;
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ html {
   width: fit-content;
 }
 
-.EmailCapturePage{
+.EmailCapturePage {
   height: 27.0833rem;
   width: 28.3333rem;
   background-color: #242126;
@@ -20,7 +20,7 @@ html {
   padding: 4.16667rem;
   font-family: Karla;
   font-style: normal;
-  color: #FFFF;
+  color: #ffff;
 }
 
 .EmailCapturePageContainer {
@@ -38,17 +38,17 @@ html {
   width: 20rem;
 }
 
-.MainPage{
+.MainPage {
   width: 28.3333rem;
   height: auto;
   align-items: center;
   justify-items: center;
   font-family: Karla;
   font-style: normal;
-  color: #FFFF;
+  color: #ffff;
 }
 
-.MainPageWrapper{
+.MainPageWrapper {
   height: 100%;
   width: 100%;
 }
@@ -65,7 +65,7 @@ html {
   row-gap: 1.66667rem;
 }
 
-.ConfirmationPage{
+.ConfirmationPage {
   height: 26.4167rem;
   width: 28.3333rem;
   background-color: #242126;
@@ -75,10 +75,10 @@ html {
   border-radius: 1.66667rem;
   font-family: Karla;
   font-style: normal;
-  color: #FFFF;
+  color: #ffff;
 }
 
-.ConfirmationPageContainer{
+.ConfirmationPageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ html {
   padding: 4.16667rem;
 }
 
-.ConfirmationPageMainContainer{
+.ConfirmationPageMainContainer {
   height: fit-content;
   width: 100%;
 }
@@ -96,16 +96,16 @@ html {
   position: relative;
   top: -2.41667rem;
   right: -12.25rem;
-  width: 1.66667rem; 
+  width: 1.66667rem;
   height: 1.66667rem;
 }
 
 .CloseButton::before,
 .CloseButton::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
-  height: 0.16667rem; 
+  height: 0.16667rem;
   background-color: #fff;
   top: 50%;
   transform: translateY(-50%);
@@ -119,7 +119,7 @@ html {
   transform: rotate(-45deg);
 }
 
-.CloseButton2{
+.CloseButton2 {
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -129,33 +129,33 @@ html {
   right: -21.5rem;
 }
 
-.Mainh1{
+.Mainh1 {
   font-size: 2.08333rem;
   font-weight: 400;
   line-height: normal;
 }
 
-.Mainh2{
+.Mainh2 {
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-.MainSubtitle{
+.MainSubtitle {
   align-self: flex-start;
   opacity: 70%;
-  color: #FFF;
+  color: #fff;
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.83333rem;
 }
 
-#EmailCapturePageH2{
+#EmailCapturePageH2 {
   margin-bottom: 0.41667rem;
 }
 
 .Mainp {
   align-self: stretch;
-  color: #FFF;
+  color: #fff;
   font-family: Karla;
   font-size: 1.25rem;
   font-style: normal;
@@ -163,39 +163,39 @@ html {
   line-height: 1.66667rem;
 }
 
-.UrlFieldForm{
+.UrlFieldForm {
   border-radius: 0.16667rem;
   width: 20rem;
   height: 2rem;
-  display:flex;
+  display: flex;
 }
 
-.UrlTextBox{
+.UrlTextBox {
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   color: white;
   border-radius: 0.16667rem;
   border: none;
   padding: 0.41667rem;
 }
 
-.EmailCaptureField{
+.EmailCaptureField {
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
 
-.EmailCaptureFieldForm{
+.EmailCaptureFieldForm {
   border-radius: 0.16667rem;
   width: 20rem;
   height: 2rem;
-  display:flex;
+  display: flex;
 }
 
-.EmailCaptureTextBox{
+.EmailCaptureTextBox {
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   color: white;
   border-radius: 0.16667rem;
   border: none;
@@ -207,11 +207,11 @@ html {
   flex-direction: column;
 }
 
-#DateAndTimeSelectorSubtitle{
+#DateAndTimeSelectorSubtitle {
   margin-bottom: 0.83333rem;
 }
 
-.DateSelector{
+.DateSelector {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -222,15 +222,15 @@ html {
   margin-bottom: 1.66667rem;
 }
 
-.TimeSelector{
+.TimeSelector {
   display: flex;
   flex-direction: row;
   align-items: center;
   column-gap: 0.41667rem;
 }
 
-.TimeSelector div{
-  color: #FFF;
+.TimeSelector div {
+  color: #fff;
   font-family: Karla;
   font-size: 1rem;
   font-style: normal;
@@ -247,7 +247,7 @@ html {
   align-items: center;
   padding: 0.41667rem 0.98167rem;
   font-family: Karla;
-  color: #FFF;
+  color: #fff;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.16667rem;
@@ -258,18 +258,18 @@ html {
 }
 
 .NotiDateActive {
-  background: #8623D4;
-  color: #FFF;
+  background: #8623d4;
+  color: #fff;
 }
 
 .NotiTimeActive {
-  background: #8623D4;
-  color: #FFF;
+  background: #8623d4;
+  color: #fff;
 }
 
 .NotiTypeActive {
-  background: #8623D4;
-  color: #FFF;
+  background: #8623d4;
+  color: #fff;
 }
 
 .SelectableOptionButton.active:hover {
@@ -282,7 +282,7 @@ html {
   outline: 1px solid white;
 }
 
-.CalendarButton{
+.CalendarButton {
   width: 2rem;
   height: 2rem;
   background-color: rgba(255, 255, 255, 0.15);
@@ -295,7 +295,7 @@ html {
   height: 100%;
 }
 
-.ClockButton{
+.ClockButton {
   width: 2rem;
   height: 2rem;
   background-color: rgba(255, 255, 255, 0.15);
@@ -308,20 +308,17 @@ html {
   height: 100%;
 }
 
-.DescriptionContainer div{
-  color: #FFF;
+.DescriptionContainer div {
+  color: #fff;
   font-family: Karla;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
 }
 
-
-
 .DescriptionField {
   width: 100%;
 }
-
 
 .DescriptionTextBox {
   display: inline-block;
@@ -330,7 +327,7 @@ html {
   justify-content: flex-start;
   width: 20rem;
   height: 5rem;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   color: white;
   border-radius: 0.16667rem;
   border: none;
@@ -340,8 +337,7 @@ html {
   resize: none;
   overflow-y: hidden;
   font-weight: 400;
-  opacity: 1.0;
-
+  opacity: 1;
 }
 
 .DescriptionTextBox::placeholder {
@@ -350,7 +346,6 @@ html {
   font-weight: 400;
   opacity: 0.6;
 }
-
 
 .NotiTypeSelectorContainer {
   display: flex;
@@ -361,13 +356,13 @@ html {
   border-radius: 0.16667rem;
 }
 
-.NotiTypeSelector{
+.NotiTypeSelector {
   display: flex;
   column-gap: 0.41667rem;
 }
 
 .NotiTypeSelectorText {
-  color: #FFF;
+  color: #fff;
   font-family: Karla;
   font-size: 1rem;
   font-style: normal;
@@ -377,31 +372,31 @@ html {
   margin-bottom: 0.8333333rem;
 }
 
-.SaveButtonContainer{
-  display:flex;
+.SaveButtonContainer {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-.SaveButton{
+.SaveButton {
   width: 100%;
   height: 2.33333333rem;
   border-radius: 1.1666666667rem;
-  background: #6F6A72;
+  background: #6f6a72;
   display: flex;
   padding: 0.41667rem 1.66667rem;
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  color: #FFF;
+  color: #fff;
   font-family: Karla;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border: none; 
-  cursor: pointer; 
+  border: none;
+  cursor: pointer;
   margin-top: 1.66667rem;
 }
 
@@ -409,26 +404,26 @@ html {
   opacity: 0.5;
 }
 
-.NextButtonContainer{
-  display:flex;
+.NextButtonContainer {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   height: 4.66667rem;
 }
 
-.NextButton{
+.NextButton {
   width: 20rem;
   height: 1.16667rem;
   border-radius: 0.58333rem;
-  background: #6F6A72;
+  background: #6f6a72;
   display: flex;
   padding: 0.83333rem 3.33333rem;
   justify-content: center;
   align-items: center;
   gap: 1.66667rem;
   align-self: stretch;
-  color: #FFF;
+  color: #fff;
   font-family: Karla;
   font-size: 1.25rem;
   font-style: normal;
@@ -437,8 +432,8 @@ html {
   border: none;
 }
 
-.NextButton div{
-  color: #FFF;
+.NextButton div {
+  color: #fff;
   font-family: Karla;
   font-size: 1.25rem;
   font-style: normal;
@@ -446,8 +441,8 @@ html {
   line-height: normal;
 }
 
-.UpgradeButtonContainer{
-  display:flex;
+.UpgradeButtonContainer {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -456,18 +451,18 @@ html {
   padding-bottom: 0px;
 }
 
-.UpgradeButton{
+.UpgradeButton {
   width: 20rem;
   height: 1.16667rem;
   border-radius: 0.58333rem;
-  background: #F43E80;
+  background: #f43e80;
   display: flex;
   padding: 0.83333rem 3.33333rem;
   justify-content: center;
   align-items: center;
   gap: 1.66667rem;
   align-self: stretch;
-  color: #FFF;
+  color: #fff;
   font-family: Karla;
   font-size: 1.25rem;
   font-style: normal;
@@ -476,8 +471,8 @@ html {
   border: none;
 }
 
-.UpgradeButton div{
-  color: #FFF;
+.UpgradeButton div {
+  color: #fff;
   font-family: Karla;
   font-size: 1.25rem;
   font-style: normal;
@@ -485,4 +480,9 @@ html {
   line-height: normal;
 }
 
+/* 
 
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█░░░░░░░░▀█▄▀▄▀██████░▀█▄▀▄▀██████░
+░░░░░░░░░░░▀█▄█▄███▀░░░ ▀██▄█▄███▀░
+ */

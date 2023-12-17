@@ -103,7 +103,7 @@ export default function MainPage() {
             isValidEmail={isValidEmail}
             isEmailTextboxEmpty={isEmailTextboxEmpty}
           />
-          <h1 className="Mainh1">Remind me about this URL</h1>
+          <h1 className="Mainh1">Remind me about:</h1>
           <UrlField
             onNotiUrlChange={handleNotiUrlChange}
             isValidUrl={isValidUrl}

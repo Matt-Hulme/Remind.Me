@@ -191,9 +191,6 @@ html {
   margin-bottom: 1.25rem;
 }
 
-/* xx 
-*/
-
 .TimeSelector {
   display: flex;
   flex-direction: row;
@@ -226,8 +223,6 @@ html {
   border: none;
   cursor: pointer;
 }
-
-/* here */
 
 .NotiDateActive {
   background: #8623d4;

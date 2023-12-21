@@ -63,7 +63,6 @@ export default function MainPage() {
 
     try {
       // Sanitize user inputs before using them in the SQL query
-
       const response = await fetch("http://localhost:3000/create-reminder", {
         method: "POST",
         headers: {
